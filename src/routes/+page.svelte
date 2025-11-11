@@ -6,16 +6,23 @@
 	import CallToAction from "$lib/components/layout/CallToAction.svelte";
 	import AboutTeaser from "$lib/components/layout/AboutTeaser.svelte";
 	import LogoScroller from "$lib/components/layout/LogoScroller.svelte";
-	import Hero from "$lib/components/layout/hero-sections/Hero.svelte";
+	import CenteredTextOnlyHero from "$lib/components/layout/hero-sections/CenteredTextOnlyHero.svelte";
 </script>
 
-<Hero
-	title="Elevate your business with thoughtful design"
-	subtitle="Solutions that enhance user experience, and improve visual communication."
-	imageSrc="https://www.unc.mn/image-placeholder.svg"
-	generating
+<CenteredTextOnlyHero
+	title="Cultivating collective intelligence on AI's future"
+	subtitle="Join a curated community of AI engineers and founders for intimate salons and thoughtful discourse that goes beyond shallow tech conversations."
+	imageSrc="/generated/image-editorial-documentary-style-photograph-o.webp"
 />
-<LogoScroller label="" generating />
+<LogoScroller 
+	label="Engaging minds from"
+	logoUrls={[
+		'https://cdn.brandfetch.io/openai.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/anthropic.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/stripe.com/w/400/h/400/logo',
+		'https://cdn.brandfetch.io/deepmind.com/w/400/h/400/logo'
+	]}
+/>
 
 <Summary
 	generating
